@@ -73,7 +73,7 @@
 						<image>openjdk:11</image>
 					</from>
 					<to>
-						<image>IMAGE_URL/events-service</image>
+						<image>${REPO_URL}/events-service</image>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>
