@@ -73,7 +73,7 @@
 						<image>openjdk:11</image>
 					</from>
 					<to>
-						<image>registry.hub.docker.com/hiluminatul/events-service</image>
+						<image>IMAGE_URL/events-service</image>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>

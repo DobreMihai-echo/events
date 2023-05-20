@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: events-service-app
-        image: hiluminatul/events-service
+        image: IMAGE_URL/events-service
         ports:
         - containerPort: 8070
         env:
