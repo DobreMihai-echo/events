@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/events")
 @Slf4j
-@CrossOrigin(origins = "http://localhost:8085")
+@CrossOrigin(origins = "http://34.88.179.57")
 public class EventsController {
 
     @Autowired

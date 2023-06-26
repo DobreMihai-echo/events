@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/challenge")
-@CrossOrigin(origins = "http://localhost:8085")
+@CrossOrigin(origins = "http://34.88.179.57")
 public class ChallengeController {
 
     @Autowired
