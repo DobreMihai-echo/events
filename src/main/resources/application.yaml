@@ -1,18 +1,21 @@
 server:
   port: 8070
 spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/userdb
+    username: postgresql
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
   application:
     name: EVENTS-SERVICE
   config:
-    import: configserver:${CONFIG_SERVER_URL:http://localhost:9000}
-  datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:5432/usersdb
-    username: postgres
-    password:
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
-    hibernate:
-      ddl-auto: update
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:9001}
 
 #eureka:
 #  instances:
